@@ -7,7 +7,8 @@
 
 # 各種ツール
 
-## Chocolateyインストール。（管理者モードで PowerShellを起動。[winマーク] + X → A）
+## Chocolateyインストール
+（管理者モードで PowerShellを起動。[winマーク] + X → A）
 ```
 Set-ExecutionPolicy RemoteSigned
 iwr https://chocolatey.org/install.ps1 -UseBasicParsing | iex
