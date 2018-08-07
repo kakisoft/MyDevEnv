@@ -1,0 +1,35 @@
+## site_name: My Docs
+
+# Project information
+site_name: My Docs
+site_description: 'kakisoft 個人用メモ'
+site_author: 'kakisoft'
+site_url: 'http://yourSite'
+
+
+# Copyright
+# copyright: 'Copyright (c) 2018'
+
+# Documentation and theme
+docs_dir: 'docs'
+theme:
+  #name: material
+  name: rtd-dropdown # Sphinxっぽい
+  language: 'ja'
+
+
+#theme: 'material'
+#theme: windmill
+#theme: cluster  # 白黒。なんか地味。検索がない。
+#theme: rtd-dropdown # Sphinxっぽい
+### theme: bootstrap  # 緑が基本色。ヘッダが紺色。 error
+
+
+extra:
+  search:
+    language: 'ja'
+
+
+
+markdown_extensions:
+  - admonition
