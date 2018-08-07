@@ -1,0 +1,22 @@
+!Microsoft IME Dictionary Tool
+!Version:
+!Format:WORDLIST
+!User Dictionary Name: C:\Users\Owner\AppData\Roaming\Microsoft\IME\15.0\IMEJP\UserDict\imjp15cu.dic
+!Output File Name: C:\Users\Owner\Desktop\output1.txt
+!DateTime: 
+
+‚‚	~	–¼Œ
+‚†	„ª	–¼Œ
+‚‹	`	–¼Œ
+‚	›	–¼Œ
+‚“	 	–¼Œ
+‚“‚“	¢	–¼Œ
+‚™	¨	–¼Œ
+‚â‚¤	ª	–¼Œ
+‚â‚µ	«	–¼Œ
+‚â‚Ğ	©	–¼Œ
+‚â‚İ	Ë	–¼Œ
+‚â‚è	Ì	–¼Œ
+‚­‚Ü	œ	–¼Œ
+‚­‚µ	¡	–¼Œ
+‚Ğ‚µ	„¯	–¼Œ

@@ -1,0 +1,6 @@
+choco install -y postgresql
+choco install -y heidisql
+
+
+choco install -y mysql
+choco install -y mysql.workbench
