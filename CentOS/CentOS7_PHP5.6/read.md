@@ -28,8 +28,7 @@ vagrant up
 /vagrant/shared
 ```
 その他の設定は、以下を参照。  
-<https://kakisoft.github.io/MiscellaneousDocs/InfraAndEnv/Virtualization/Vagrant_note04_use2_shareFolder/>
-
+<https://kakisoft.github.io/MiscellaneousDocs/InfraAndEnv_Tool_Service/Vagrant/Vagrant_note04_use2_shareFolder/>
 
 #### Apache：DocumentRoot
 ```
