@@ -43,6 +43,8 @@
         - php-zip
  
     #=====[ MySQL ]=====
+#ハマりにハマったんで、MySQLは一旦休止。
+#
 #    - name: install mysql
 #      command: sudo rpm -ivh {{mysql_repo_url}}
 #      command: echo "If there is no suitable command here, I get an error after executing the above command! I wonder why!"
