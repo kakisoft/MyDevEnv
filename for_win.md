@@ -23,10 +23,13 @@ cinst -y packages.config
  * Advanced REST Client
  * Mate Translate
  * Lighthouse
+ * ColorPick Eyedropper  
 
 
-# IME登録
-MyIME.txt
+# その他（必要に応じて）
+ * IME：MyIME.txt
+ * Officeリボン：MyExcel2010Customizations.exportedUI
+ * C#スニペット：tryf.snippet
 
 
 
