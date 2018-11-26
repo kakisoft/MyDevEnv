@@ -13,7 +13,7 @@
 Set-ExecutionPolicy RemoteSigned
 iwr https://chocolatey.org/install.ps1 -UseBasicParsing | iex
 ```
-packages.config をコピー。  
+packages.config をローカルにコピー。  
 packages.config が存在するフォルダにて、以下を実行。
 ```
 cinst -y packages.config
