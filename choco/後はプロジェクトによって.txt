@@ -1,6 +1,12 @@
+choco install -y docker
+choco install -y docker-compose
+choco install -y docker-for-windows
+
+
 choco install -y postgresql
 choco install -y heidisql
 
 
 choco install -y mysql
 choco install -y mysql.workbench
+
