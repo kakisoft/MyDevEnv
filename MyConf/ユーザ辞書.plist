@@ -64,15 +64,21 @@
 	</dict>
 	<dict>
 		<key>phrase</key>
+		<string>┏┳━┓</string>
+		<key>shortcut</key>
+		<string>ふとわく</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
 		<string>┗┻━┛</string>
 		<key>shortcut</key>
 		<string>ふとわく</string>
 	</dict>
 	<dict>
 		<key>phrase</key>
-		<string>┏┳━┓</string>
+		<string>┌┬─┐</string>
 		<key>shortcut</key>
-		<string>ふとわく</string>
+		<string>ほそわく</string>
 	</dict>
 	<dict>
 		<key>phrase</key>
@@ -82,9 +88,9 @@
 	</dict>
 	<dict>
 		<key>phrase</key>
-		<string>┌┬─┐</string>
+		<string> -&gt; </string>
 		<key>shortcut</key>
-		<string>ほそわく</string>
+		<string>やあ</string>
 	</dict>
 	<dict>
 		<key>phrase</key>
