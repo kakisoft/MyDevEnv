@@ -1,0 +1,16 @@
+version: '3'
+services:
+  web:
+    image: nginx:1.15.6
+    ports:
+      - "8000:80"
+    depends_on:
+      - app
+    volumes:
+      - ./docker/web/default.conf:/etc/nginx/conf.d/default.conf
+      - .:/var/www/html
+  app:
+    image: php:7.2.12-fpm
+    volumes:
+      - .:/var/www/html
+
