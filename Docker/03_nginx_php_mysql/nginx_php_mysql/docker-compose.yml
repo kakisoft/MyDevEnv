@@ -11,6 +11,8 @@ services:
       - .:/var/www/html
   app:
     image: php:7.2.12-fpm
+    depends_on:
+    - mysql
     volumes:
       - .:/var/www/html
   mysql:
