@@ -122,9 +122,10 @@ PHP-FPMはデフォルトでポート 9000番で起動するのでfastcgi_pass�
 <?php phpinfo();?>
 ```
 
-## 起動
+## 起動・終了
 ```
 docker-compose up -d
+docker-compose down
 
 ※Linuxの場合、sudo で。
 ```
