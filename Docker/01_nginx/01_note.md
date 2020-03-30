@@ -69,7 +69,7 @@ http://localhost:8000/
 ____________________________
 ＜参考サイト＞
 ## Laravelの環境
-https://windii.jp/laravel/laravel-with-docker-compose#Nginx
+https://windii.jp/laravel/laravel-with-docker-compose
 
 
 ## Nginx設定のまとめ
