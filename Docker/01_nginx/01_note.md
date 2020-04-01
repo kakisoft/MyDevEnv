@@ -22,7 +22,7 @@ nginx の設定ファイルはローカルにて編集し、
 ```
 
 ## docker-compose.yml 
-```
+```yml
 version: '3'
 services:
   web:

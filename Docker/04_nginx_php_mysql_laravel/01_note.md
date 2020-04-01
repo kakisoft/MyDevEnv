@@ -45,7 +45,7 @@ WORKDIR /var/www/html
 ```
 
 ## docker-compose.yml 
-```
+```yml
 version: '3'
 services:
   web:
