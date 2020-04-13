@@ -5,6 +5,67 @@ mkdir laravel-docker-workspace
 cd laravel-docker-workspace
 ```
 
+## 起動・終了
+```
+docker-compose up -d
+docker-compose down
+
+※Linuxの場合、sudo で。
+```
+
+## コンテナにタッチして作業
+※Ubuntu だと composer が not found だった。
+``
+docker-compose exec app bash
+
+composer create-project --prefer-dist laravel/laravel my-laravel-app
+``
+
+## docker/web/default.conf 編集
+```
+#    root  /var/www/html;
+    root  /var/www/html/my-laravel-app/public;
+```
+
+## LaravelをMySQLと接続
+.envファイルを編集。（上記では、/my-laravel-app/.env ）
+```
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=homestead
+DB_USERNAME=homestead
+DB_PASSWORD=secret
+
+     ↓
+
+DB_CONNECTION=mysql
+DB_HOST=mysql
+DB_PORT=3306
+DB_DATABASE=sample
+DB_USERNAME=user
+DB_PASSWORD=password
+```
+
+## 再起動
+```
+docker-compose restart
+```
+
+## マイグレーション
+```
+docker-compose exec app bash
+cd my-laravel-app
+php artisan migrate
+```
+
+
+## アクセス
+```
+http://localhost:8000/
+```
+
+____________________________________________________________________________________________________________________________________
 ## 構成
 ```
 ├── docker
@@ -121,72 +182,6 @@ PHP-FPMはデフォルトでポート 9000番で起動するのでfastcgi_pass�
 
 <?php phpinfo();?>
 ```
-
-## 起動・終了
-```
-docker-compose up -d
-docker-compose down
-
-※Linuxの場合、sudo で。
-```
-
-## コンテナにタッチして作業
-※Ubuntu だと composer が not found だった。
-``
-docker-compose exec app bash
-
-composer create-project --prefer-dist laravel/laravel my-laravel-app
-``
-
-## docker/web/default.conf 編集
-```
-#    root  /var/www/html;
-    root  /var/www/html/my-laravel-app/public;
-```
-
-## 再起動
-```
-docker-compose restart
-```
-
-## LaravelをMySQLと接続
-.envファイルを編集。（上記では、/my-laravel-app/.env ）
-```
-DB_CONNECTION=mysql
-DB_HOST=127.0.0.1
-DB_PORT=3306
-DB_DATABASE=homestead
-DB_USERNAME=homestead
-DB_PASSWORD=secret
-
-     ↓
-
-DB_CONNECTION=mysql
-DB_HOST=mysql
-DB_PORT=3306
-DB_DATABASE=sample
-DB_USERNAME=user
-DB_PASSWORD=password
-```
-
-## 再起動
-```
-docker-compose restart
-```
-
-## マイグレーション
-```
-docker-compose exec app bash
-cd my-laravel-app
-php artisan migrate
-```
-
-
-## アクセス
-```
-http://localhost:8000/
-```
-
 ____________________________
 ＜参考サイト＞
 ## Laravelの環境
