@@ -7,3 +7,18 @@ https://qiita.com/zembutsu/items/9e9d80e05e36e882caaa
 ## Laravelの環境をDockerで構築するチュートリアル
 https://tech.windii.jp/backend/laravel/laravel-with-docker-compose  
 
+_________________________________________________________________________________
+## docker-compose.ymlの書き方について解説してみた
+https://qiita.com/yuta-ushijima/items/d3d98177e1b28f736f04  
+
+## Docker Compose - docker-compose.yml リファレンス
+https://qiita.com/zembutsu/items/9e9d80e05e36e882caaa  
+
+## docker-compose depends_onとlinksの違い
+https://qiita.com/sivertigo/items/9baa73d922a68788402b  
+
+
+_________________________________________________________________________________
+
+
+
