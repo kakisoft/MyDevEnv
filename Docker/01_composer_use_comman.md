@@ -14,3 +14,9 @@ Ctrl-C で終了した場合、```tmp/pids/server.pid``` を削除し、再起�
 ```
 docker-compose restart
 ```
+
+## コンテナログイン
+```
+docker-compose exec app bash
+```
+
