@@ -10,6 +10,13 @@ docker-compose down
 Ctrl-C で終了した場合、```tmp/pids/server.pid``` を削除し、再起動。  
 再起動は、docker-compose up
 
+## 終了時にコンテナを削除
+```
+docker-compose down --rmi all
+docker-compose down --rmi all --volumes
+```
+※ データベース名（MYSQL_DATABASE）を変更した場合、「--volumes」で丸ごと削除してから、また作り直した方がよさそう。
+
 ## 再起動
 ```
 docker-compose restart
