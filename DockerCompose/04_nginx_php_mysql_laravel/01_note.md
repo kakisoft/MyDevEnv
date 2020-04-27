@@ -21,6 +21,11 @@ docker-compose exec app bash
 composer create-project --prefer-dist laravel/laravel my-laravel-app
 ``
 
+バージョンを指定する場合
+```
+composer create-project --prefer-dist  "laravel/laravel=5.5" my-laravel-app
+```
+
 ## docker/web/default.conf 編集
 ```
 #    root  /var/www/html;
