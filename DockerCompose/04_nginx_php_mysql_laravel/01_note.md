@@ -46,6 +46,10 @@ DB_DATABASE=sample
 DB_USERNAME=user
 DB_PASSWORD=password
 ```
+＜パラメータ解説（推測）＞  
+DB_CONNECTION=mysql は、「DBにMySQLを使います」という意味。ポスグレ使うなら、potgresとか？  
+DB_HOST=mysql は、docker-compose.yml の「mysql:」。DB名とは無関係。（多分）  
+
 
 ## 再起動
 ```
