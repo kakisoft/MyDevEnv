@@ -54,7 +54,7 @@ DB_PASSWORD=password
 ＜パラメータ解説（推測）＞  
 DB_CONNECTION=mysql は、「DBにMySQLを使います」という意味。ポスグレ使うなら、potgresとか？  
 DB_HOST=mysql は、docker-compose.yml の「mysql:」。DB名とは無関係。（多分）  
-
+DB_DATABASE=sample  は、MySQL の DB名になるので、お好みで。（その時は docker-compose.yml も変更を）
 
 ## 再起動
 ```
