@@ -21,6 +21,11 @@ docker-compose exec app bash
 composer create-project --prefer-dist laravel/laravel my-laravel-app
 ``
 
+バージョンを指定する場合
+```
+composer create-project --prefer-dist  "laravel/laravel=5.5" my-laravel-app
+```
+
 ## docker/web/default.conf 編集
 ```
 #    root  /var/www/html;
@@ -46,6 +51,10 @@ DB_DATABASE=sample
 DB_USERNAME=user
 DB_PASSWORD=password
 ```
+＜パラメータ解説（推測）＞  
+DB_CONNECTION=mysql は、「DBにMySQLを使います」という意味。ポスグレ使うなら、potgresとか？  
+DB_HOST=mysql は、docker-compose.yml の「mysql:」。DB名とは無関係。（多分）  
+DB_DATABASE=sample  は、MySQL の DB名になるので、お好みで。（その時は docker-compose.yml も変更を）
 
 ## 再起動
 ```
