@@ -101,14 +101,43 @@ sudo docker rm `sudo docker ps -a -q`
 ```
 sudo docker run -it <REPOSITORY:TAG> /bin/bash/bin/bash
 ```
-	
 ### ホストのポートをコンテナのポートにリダイレクト
 以下では、ホストのポート8080を、コンテナの80にリダイレクト。
 ```
 sudo docker run -p 8080:80 -d <イメージ名>
 ```
 
+____________________________________________________________
+# ボリューム
+```yml
+volumes:
+  db-data:
+    driver: local
+```
+
+
+## ボリューム一覧を表示
+```
+docker volume ls
+```
+
+## ボリュームを削除
+```
+docker volume rm XXXXXX
+
+（入力例）
+docker volume rm nginx_php_mysql_larabel_mysql-data
+```
+
+## ボリューム全削除
+```
+docker volume rm $(docker volume ls -qf dangling=true)
+```
+ちゃんと動かないかも。
+
+____________________________________________________________
 ## 実行中以外のコンテナの残骸をまとめて削除
 ```
 docker container prune
 ```
+
