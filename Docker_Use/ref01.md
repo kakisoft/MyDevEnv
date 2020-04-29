@@ -1,5 +1,5 @@
 ## Play With Docker（Dockerをブラウザ上から試せるサービス）
-<https://labs.play-with-docker.com/>
+https://labs.play-with-docker.com/  
 
 ```
 （実行例）
@@ -9,7 +9,7 @@ IPの横に出てくるポート番号をクリックすると、ブラウザか
 ```
 
 ## Play With Docker を使ったチュートリアル
-<https://training.play-with-docker.com/>
+https://training.play-with-docker.com/  
 
 
 _________________________________________________________________________________
