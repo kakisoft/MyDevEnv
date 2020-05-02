@@ -1,0 +1,3 @@
+## Scoop
+https://scoop.sh/
+
