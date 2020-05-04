@@ -34,7 +34,7 @@ composer create-project --prefer-dist  "laravel/laravel=5.5" my-laravel-app
 ```
 
 ## LaravelをMySQLと接続
-.envファイルを編集。（上記では、/my-laravel-app/.env ）
+.env ファイルを編集。（上記では、/my-laravel-app/.env ）
 ```
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
