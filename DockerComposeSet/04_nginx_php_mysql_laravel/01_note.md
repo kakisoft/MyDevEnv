@@ -18,11 +18,12 @@ docker-compose down
 ``
 docker-compose exec app bash
 
+
+バージョンを指定しない場合（最新版がインストールされる）
 composer create-project --prefer-dist laravel/laravel my-laravel-app
-``
+
 
 バージョンを指定する場合
-```
 composer create-project --prefer-dist  "laravel/laravel=5.5" my-laravel-app
 ```
 
