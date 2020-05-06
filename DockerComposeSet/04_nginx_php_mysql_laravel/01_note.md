@@ -28,6 +28,7 @@ composer create-project --prefer-dist  "laravel/laravel=5.5" my-laravel-app
 ```
 
 ## docker/web/default.conf 編集
+※ プロジェクト名に注意してね。（my-laravel-app）  
 ```
 #    root  /var/www/html;
     root  /var/www/html/my-laravel-app/public;
