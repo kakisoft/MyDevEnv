@@ -136,6 +136,17 @@ docker volume rm $(docker volume ls -qf dangling=true)
 ちゃんと動かないかも。
 
 ____________________________________________________________
+## ネットワークの状況確認
+https://qiita.com/egoa56/items/c932a627e54e626a2b97
+```
+docker network ls
+
+
+docker network inspect templates_default
+docker network inspect 9f0f422484d6
+```
+
+____________________________________________________________
 ## 実行中以外のコンテナの残骸をまとめて削除
 ```
 docker container prune
