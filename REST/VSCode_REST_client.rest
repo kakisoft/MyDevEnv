@@ -60,7 +60,8 @@ POST {{baseurl}}/challenge_users
 content-type: application/json
 
 {
-    "name": "{{name}}"
+    "name": "{{name}}",
+    "email": "{{email}}"
 }
 
 
