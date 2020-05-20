@@ -34,7 +34,7 @@
 #              変数
 #====================================
 @baseurl_sample = https://hoge.jp/v1
-# @baseurl = http://challenge-your-limits.herokuapp.com
+# @baseurl = https://challenge-your-limits.herokuapp.com
 @baseurl = http://localhost:8000/api
 @name = sample_sample_02
 @email = sample_sample_02@gmail.com
@@ -43,7 +43,7 @@
 #
 #====================================
 
-# GET https://challenge-YOUR-limits.HEROKUAPP.com/call/me
+# GET https://challenge-your-limits.herokuapp.com
 GET {{baseurl}}/call/me
 
 ###
