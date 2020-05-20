@@ -1,0 +1,51 @@
+# 【 REST Client 】
+# https://marketplace.visualstudio.com/items?itemName=humao.rest-client
+#
+#
+# ＜記述＞
+#  * 拡張子を「.rest」or「.http」
+#  * 「###」が区切り文字
+#
+#  ＜実行＞
+#  * 「Send Request」を押す
+#  * (Win) Alt + Ctrl + r
+#  * (Mac) Cmd + Ctrl + r
+#  * F1 -> Send Request
+#
+
+#====================================
+#             変数
+#====================================
+@baseurl_sample = https://hoge.jp/v1
+@baseurl = https://challenge-YOUR-limits.HEROKUAPP.com/
+@name = sample_sample_02
+@email = sample_sample_02@gmail.com
+
+#====================================
+#
+#====================================
+
+# GET https://challenge-YOUR-limits.HEROKUAPP.com/call/me
+GET {{baseurl}}/call/me
+
+###
+POST {{baseurl}}/call/me
+
+###
+
+POST {{baseurl}}/challenge_users
+
+###
+
+# 「content-type」の下は１行空けないといけないみたい。
+POST {{baseurl}}/challenge_users
+content-type: application/json
+
+{
+    "name": "name"
+}
+
+
+
+
+
