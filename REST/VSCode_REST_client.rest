@@ -14,7 +14,9 @@
 #
 
 #（参考）
-#  
+#
+#  レスポンスの保存・認証
+#  https://qiita.com/toshi0607/items/c4440d3fbfa72eac840c
 #
 #  変数について
 #  https://dev.classmethod.jp/articles/vscode-rest-client-is-good/
