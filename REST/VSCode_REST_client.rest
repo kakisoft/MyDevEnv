@@ -13,11 +13,29 @@
 #  * F1 -> Send Request
 #
 
+#（参考）
+#  
+#
+#  変数について
+#  https://dev.classmethod.jp/articles/vscode-rest-client-is-good/
+#
+# 【 システム変数（UUID, ランダムな数字, タイムスタンプ等） 】
+# POST https://api.example.com/comments
+#
+# {
+#     "request_id": "{{$guid}}",
+#     "updated_at": "{{$timestamp}}",
+#     "created_at": "{{$timestamp -1 d}}",
+#     "review_count": "{{$randomInt 5, 200}}",
+#     "custom_date": "{{$datetime 'YYYY-MM-DD'}}"
+# }
+
 #====================================
-#             変数
+#              変数
 #====================================
 @baseurl_sample = https://hoge.jp/v1
-@baseurl = https://challenge-YOUR-limits.HEROKUAPP.com/
+# @baseurl = http://challenge-your-limits.herokuapp.com
+@baseurl = http://localhost:8000/api
 @name = sample_sample_02
 @email = sample_sample_02@gmail.com
 
@@ -42,7 +60,7 @@ POST {{baseurl}}/challenge_users
 content-type: application/json
 
 {
-    "name": "name"
+    "name": "{{name}}"
 }
 
 
