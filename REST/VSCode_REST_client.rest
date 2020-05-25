@@ -58,6 +58,7 @@ POST {{baseurl}}/challenge_users
 ###
 
 # 「content-type」の下は１行空けないといけないみたい。
+# また、最後のパラメータの末尾に「,」があると、上手く動かないみたい。
 POST {{baseurl}}/challenge_users
 content-type: application/json
 
