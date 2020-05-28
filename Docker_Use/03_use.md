@@ -43,6 +43,11 @@ sudo docker run -d -e POSTGRES_USER=odoo -e POSTGRES_PASSWORD=odoo --name db pos
 sudo docker ps
 ```
 
+### コンテナを停止する
+```
+docker stop <CONTAINER ID>
+```
+
 ### 実行終了したコンテナ一覧を表示
 ```
 sudo docker ps -a
