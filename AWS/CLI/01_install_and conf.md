@@ -5,7 +5,7 @@ choco install awscli
 
 ___________________________________________________________________________
 ## 設定
-https://docs.aws.amazon.com/ja_jp/cli/latest/userguide/cli-configure-files.html
+https://docs.aws.amazon.com/ja_jp/cli/latest/userguide/cli-configure-files.html  
 ```
 aws configure
 ```
@@ -13,6 +13,10 @@ AWS Access Key ID
 AWS Secret Access Key  
 Default region name  
 Default output format  （ jsonとか。空白でもOK）  
+
+#### 名前付きプロファイル
+https://docs.aws.amazon.com/ja_jp/cli/latest/userguide/cli-configure-profiles.html  
+
 
 ___________________________________________________________________________
 ## ヘルプ
