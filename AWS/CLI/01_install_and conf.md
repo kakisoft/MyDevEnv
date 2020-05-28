@@ -11,8 +11,15 @@ aws configure
 AWS Access Key ID  
 AWS Secret Access Key  
 Default region name  
-Default output format  （ jsonとか。空白でもOK）
+Default output format  （ jsonとか。空白でもOK）  
 
+___________________________________________________________________________
+## ヘルプ
+```
+aws help
+
+aws ec2 help
+```
 
 ___________________________________________________________________________
 ## リージョンエンドポイント
