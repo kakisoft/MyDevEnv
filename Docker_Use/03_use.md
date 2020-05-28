@@ -45,7 +45,7 @@ sudo docker ps
 
 ### コンテナを停止する
 ```
-docker stop <CONTAINER ID>
+sudo docker stop <CONTAINER ID>
 ```
 
 ### 実行終了したコンテナ一覧を表示
