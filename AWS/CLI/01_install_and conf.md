@@ -6,6 +6,7 @@ choco install awscli
 ___________________________________________________________________________
 ## 設定
 https://docs.aws.amazon.com/ja_jp/cli/latest/userguide/cli-configure-files.html  
+https://docs.aws.amazon.com/ja_jp/cli/latest/userguide/cli-chap-configure.html  
 ```
 aws configure
 ```
