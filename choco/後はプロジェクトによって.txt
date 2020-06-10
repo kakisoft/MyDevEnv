@@ -10,3 +10,6 @@ choco install -y heidisql
 choco install -y mysql
 choco install -y mysql.workbench
 
+
+choco install -y make
+
