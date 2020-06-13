@@ -40,6 +40,11 @@ COPY helloworld /usr/local/bin
 ADD ./index.html /var/www/html/
 ```
 
+# ADD と COPY
+http://docs.docker.jp/engine/userguide/eng-image/dockerfile_best-practices.html?highlight=add#add-copy  
+>ADD と COPY の機能は似ていますが、一般的には COPY が選ばれます。  
+>それは ADD よりも機能がはっきりしているからです。  
+
 
 # EXPOSE: 起動時に指定ポートをLISTEN 
 ```dockerfile
