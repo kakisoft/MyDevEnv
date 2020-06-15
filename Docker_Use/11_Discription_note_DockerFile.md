@@ -11,6 +11,7 @@ MAINTAINER kakisoft <sample@gmail.com>
 
 
 ## RUN: Dockerイメージビルド時に、Dockerコンテナ内で実行するコマンド
+ビルド時に１回だけ実行されるコマンド、という意味？
 ```dockerfile
 RUN echo "now building..."
 RUN mkdir /echo
@@ -23,6 +24,7 @@ RUN apk add --no-cache --virtual=build-deps build-base && \
 
 ## CMD: Dockerコンテナとして実行する際に、コンテナ内で実行するプロセスを指定する。
 イメージをビルドするための RUN に対し、CMD はコンテナ起動時に実行される。  
+（ビルドしようがしまいが、必ず実行する命令、という意味？）  
 
 イメージを実行する時、コンテナに対して何もオプションを指定しなければ、自動的に実行するコマンドを CMD 命令で指定する。
 ```dockerfile
