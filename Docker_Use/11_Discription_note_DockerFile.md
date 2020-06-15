@@ -51,7 +51,7 @@ http://docs.docker.jp/engine/userguide/eng-image/dockerfile_best-practices.html?
 >それは ADD よりも機能がはっきりしているからです。  
 
 
-## EXPOSE: 起動時に指定ポートをLISTEN 
+## EXPOSE: 起動時に指定ポートをLISTEN
 ```dockerfile
 EXPOSE 80
 ```
@@ -82,3 +82,10 @@ ENV myName="John Doe" myDog=Rex\ The\ Dog \
 ```
 
 
+## WORKDIR
+http://docs.docker.jp/engine/reference/builder.html#workdir  
+
+ワークディレクトリを設定する。存在しない場合は生成される。
+```dockerfile
+WORKDIR /path/to/workdir
+```
