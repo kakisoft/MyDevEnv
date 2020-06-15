@@ -45,7 +45,7 @@ COPY helloworld /usr/local/bin
 ADD ./index.html /var/www/html/
 ```
 
-## ADD と COPY
+#### ADD と COPY
 http://docs.docker.jp/engine/userguide/eng-image/dockerfile_best-practices.html?highlight=add#add-copy  
 >ADD と COPY の機能は似ていますが、一般的には COPY が選ばれます。  
 >それは ADD よりも機能がはっきりしているからです。  
@@ -67,4 +67,18 @@ http://docs.docker.jp/engine/reference/builder.html#shell
 SHELL ["cmd", "/S", "/C"]
 SHELL ["/bin/bash", "-l", "-c"]
 ```
+
+
+## ENV
+http://docs.docker.jp/engine/reference/builder.html#env  
+
+環境変数 \<key\> に \<value\> という値を設定する。  
+２種類の書式がある。
+```dockerfile
+ENV GOLANG_VERSION 1.13.12
+
+ENV myName="John Doe" myDog=Rex\ The\ Dog \
+    myCat=fluffy
+```
+
 
