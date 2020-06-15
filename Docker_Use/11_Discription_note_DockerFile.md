@@ -4,14 +4,18 @@ FROM ubuntu:16.04
 ```
 
 
-## 誰が書いたかを表す
+## MAINTAINER : 誰が書いたかを表す（廃止予定）
+http://docs.docker.jp/engine/reference/builder.html#maintainer
 ```dockerfile
 MAINTAINER kakisoft <sample@gmail.com>
 ```
 
 
 ## RUN: Dockerイメージビルド時に、Dockerコンテナ内で実行するコマンド
-ビルド時に１回だけ実行されるコマンド、という意味？
+http://docs.docker.jp/engine/reference/builder.html#run  
+
+ビルド時に１回だけ実行されるコマンド、という意味？  
+２つの形式がある。  
 ```dockerfile
 RUN echo "now building..."
 RUN mkdir /echo
@@ -19,10 +23,15 @@ RUN apk add --no-cache --virtual=build-deps build-base && \
     apk add --no-cache g++ && \
     pip3 install locustio pyzmq && \
     apk del --no-cache build-deps
+
+
+RUN ["/bin/bash", "-c", "echo hello"]
 ```
 
 
 ## CMD: Dockerコンテナとして実行する際に、コンテナ内で実行するプロセスを指定する。
+http://docs.docker.jp/engine/userguide/eng-image/dockerfile_best-practices.html?highlight=add#cmd  
+
 イメージをビルドするための RUN に対し、CMD はコンテナ起動時に実行される。  
 （ビルドしようがしまいが、必ず実行する命令、という意味？）  
 
@@ -32,6 +41,11 @@ CMD ["echo", "now running..."]
 CMD ["/bin/bash"]
 CMD ["/usr/sbin/httpd", "-D", "FOREGROUND"]
 ```
+
+> CMD コマンドは、イメージ内に含まれるソフトウェアを実行するために用いるもので、引数を指定して実行します。  
+> CMD はほぼ、CMD ["実行モジュール名", "引数1", "引数2" …] の形式をとります。  
+> Apache や Rails のようにサービスをともなうイメージに対しては、たとえば CMD ["apache2","-DFOREGROUND"] といったコマンド実行になります。  
+> 実際にサービスベースのイメージに対しては、この実行形式が推奨されます。  
 
 
 ## COPY : Dockerを動作させているホストマシン上のファイルやディレクトリを、Dockerコンテナ内にコピーする
@@ -52,6 +66,9 @@ http://docs.docker.jp/engine/userguide/eng-image/dockerfile_best-practices.html?
 
 
 ## EXPOSE: 起動時に指定ポートをLISTEN
+http://docs.docker.jp/engine/userguide/eng-image/dockerfile_best-practices.html?highlight=add#expose  
+
+コンテナが接続のためにリッスンするポートを指定します。  
 ```dockerfile
 EXPOSE 80
 ```
@@ -89,3 +106,19 @@ http://docs.docker.jp/engine/reference/builder.html#workdir
 ```dockerfile
 WORKDIR /path/to/workdir
 ```
+
+
+## USER
+http://docs.docker.jp/engine/reference/builder.html#user
+
+```
+USER <user>[:<group>]
+
+USER <UID>[:<GID>]
+```
+
+USER 命令は、ユーザ名（または UID）と、オプションとしてユーザグループ（または GID）を指定します。   
+そしてイメージが実行されるとき、Dockerfile 内の後続の RUN、CMD、ENTRYPOINT の各命令においてこの情報を利用します。  
+
+
+

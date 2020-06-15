@@ -4,6 +4,10 @@ http://docs.docker.jp/index.html
 http://docs.docker.jp/engine/reference/builder.html  
 
 
+# Dockerfile 記述のベスト・プラクティス
+http://docs.docker.jp/engine/userguide/eng-image/dockerfile_best-practices.html  
+https://docs.docker.com/develop/develop-images/dockerfile_best-practices/  
+
 _________________________________________________________________________________
 _________________________________________________________________________________
 _________________________________________________________________________________
