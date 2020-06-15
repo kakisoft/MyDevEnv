@@ -61,5 +61,8 @@ http://docs.docker.jp/engine/reference/builder.html#shell
 デフォルトのシェルを、上書き設定するために利用します。   
 デフォルトのシェルは Linux 上では ["/bin/sh", "-c"]、Windows 上では ["cmd", "/S", "/C"] です。  
 
-
+```dockerfile
+SHELL ["cmd", "/S", "/C"]
+SHELL ["/bin/bash", "-l", "-c"]
+```
 
