@@ -151,6 +151,14 @@ docker network inspect templates_default
 docker network inspect 9f0f422484d6
 ```
 
+
+____________________________________________________________
+## pull したイメージの内容を確認
+```
+docker inspect <image:tag>
+docker inspect php:7.2.12-fpm
+```
+
 ____________________________________________________________
 ## 実行中以外のコンテナの残骸をまとめて削除
 ```
