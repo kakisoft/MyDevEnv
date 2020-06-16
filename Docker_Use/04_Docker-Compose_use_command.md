@@ -126,6 +126,6 @@ docker-compose start
 imageの構築から、コンテナの構築・起動までしてくれる。  
 引数でサービスを指定しないと失敗する。  
 ```
-docker-compose run web
+docker-compose run -d web
 ```
 
