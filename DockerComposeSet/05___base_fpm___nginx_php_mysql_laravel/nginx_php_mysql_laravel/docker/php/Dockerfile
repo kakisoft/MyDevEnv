@@ -13,16 +13,15 @@ RUN apt-get install -y \
       unzip \
       vim
 
-
-
-# RUN apt-get update && \
-#     apt-get -y install git libicu-dev libonig-dev libzip-dev unzip locales && \
-#     apt-get clean
-
+### install dev tools
+RUN apt-get install -y \
+      locales \
+      libicu-dev \
+      libonig-dev \
+      libzip-dev
 
 #### delete unnecessary archive files
 RUN apt-get clean
-
 
 #### Set Working directory
 WORKDIR /var/www

@@ -111,7 +111,7 @@ WORKDIR /path/to/workdir
 ## USER
 http://docs.docker.jp/engine/reference/builder.html#user
 
-```
+```dockerfile
 USER <user>[:<group>]
 
 USER <UID>[:<GID>]
