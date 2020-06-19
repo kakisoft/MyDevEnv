@@ -16,6 +16,7 @@ RUN apt-get install -y \
 ### install dev tools
 RUN apt-get install -y \
       locales \
+      libpq-dev \
       libicu-dev \
       libonig-dev \
       libzip-dev
