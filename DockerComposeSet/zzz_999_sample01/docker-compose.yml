@@ -21,9 +21,9 @@ services:
   # linux/arm/v5
   app07:
     image: php@sha256:8e95f90bba6652bb5a42291a46a17923dcadd6cabf69fda594aba1be2a9b6555
-  # linux/mips64le
-  app08:
-    image: php@sha256:6f6423c144c88222b60de5b35183eb83d8199ffeef056897e518970a52462dd2
+  # # linux/mips64le
+  # app08:
+  #   image: php@sha256:6f6423c144c88222b60de5b35183eb83d8199ffeef056897e518970a52462dd2
 
 
 
