@@ -1,16 +1,18 @@
-FROM php:7.2.12-fpm
+FROM php@sha256:84311597ecddef820dfab8893acbcdc1f1b3b545decfedf791aa7b99429206df
 
-# install composer
-RUN cd /usr/bin && curl -s http://getcomposer.org/installer | php && ln -s /usr/bin/composer.phar /usr/bin/composer
-RUN apt-get update \
-&& apt-get install -y \
-git \
-zip \
-unzip \
-vim
+# FROM php:7.2.12-fpm
 
-RUN apt-get update \
-    && apt-get install -y libpq-dev \
-    && docker-php-ext-install pdo_mysql pdo_pgsql
+# # install composer
+# RUN cd /usr/bin && curl -s http://getcomposer.org/installer | php && ln -s /usr/bin/composer.phar /usr/bin/composer
+# RUN apt-get update \
+# && apt-get install -y \
+# git \
+# zip \
+# unzip \
+# vim
 
-WORKDIR /var/www/html
+# RUN apt-get update \
+#     && apt-get install -y libpq-dev \
+#     && docker-php-ext-install pdo_mysql pdo_pgsql
+
+# WORKDIR /var/www/html

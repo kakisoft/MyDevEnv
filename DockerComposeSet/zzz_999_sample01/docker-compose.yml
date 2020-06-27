@@ -1,11 +1,52 @@
-version: '2'
+version: '3'
 services:
-  web:
-    build: .
-    depends_on:
-      - db
-      - redis
-  redis:
-    image: redis
-  db:
-    image: postgres
+  # linux/amd64
+  app01:
+    image: php@sha256:cf3f0f13f1726595bdee10ece07c788b54e3f491817ae1b274931d5520af2d47
+  # linux/ppc64le
+  app02:
+    image: php@sha256:89a021692e04f3e88a574e918ecf2b620465d70f936ab9d2cd17cdf99bf8cd87
+  # linux/386
+  app03:
+    image: php@sha256:5846a11aa9541b93c07160af0359a2650842e914f2e23a0f77c123945b0670bf
+  # linux/s390x
+  app04:
+    image: php@sha256:250e769a4d0eb7502e7aa73d7c5151129f6a07931467ba16b4c930f2ba942d2c
+  # linux/arm/v7
+  app05:
+    image: php@sha256:84311597ecddef820dfab8893acbcdc1f1b3b545decfedf791aa7b99429206df
+  # linux/arm64/v8
+  app06:
+    image: php@sha256:a8a5be3677f3e25dde3cb9b528535b8493d9c4a4e99b7a56d622e5638c7c307b
+  # linux/arm/v5
+  app07:
+    image: php@sha256:8e95f90bba6652bb5a42291a46a17923dcadd6cabf69fda594aba1be2a9b6555
+  # linux/mips64le
+  app08:
+    image: php@sha256:6f6423c144c88222b60de5b35183eb83d8199ffeef056897e518970a52462dd2
+
+
+
+
+
+
+###################################################
+
+# version: '3'
+# services:
+#   app:
+#     build: .
+
+###################################################
+
+# version: '2'
+# services:
+#   web:
+#     build: .
+#     depends_on:
+#       - db
+#       - redis
+#   redis:
+#     image: redis
+#   db:
+#     image: postgres
