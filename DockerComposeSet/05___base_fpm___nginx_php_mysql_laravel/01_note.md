@@ -49,7 +49,7 @@ DB_PASSWORD=secret
 DB_CONNECTION=mysql
 DB_HOST=mysql
 DB_PORT=3306
-DB_DATABASE=sample
+DB_DATABASE=sample_db
 DB_USERNAME=user
 DB_PASSWORD=password
 ```
