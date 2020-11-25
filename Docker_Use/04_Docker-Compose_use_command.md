@@ -115,6 +115,11 @@ docker-compose up -d --build
 の方が良さそう。
 
 
+## --build オプション
+Dockerfile or ビルド処理の変更を反映させる  
+（これが無いと、キャッシュから起動する。多分）  
+
+
 ### start
 既存のコンテナを起動する。
 ```
