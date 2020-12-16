@@ -68,3 +68,22 @@ content-type: application/json
 }
 
 
+###
+
+# 入れ子
+
+POST {{baseurl}}/challenge_users
+content-type: application/json
+
+{
+    "id": "991",
+    "params": {
+        "item_id"    : "1",
+        "shipper_id" : "2",
+        "name"       : "3",
+        "invoice"    : "4"
+    }
+}
+
+
+
