@@ -74,6 +74,8 @@ content-type: application/json
 
 POST {{baseurl}}/challenge_users
 content-type: application/json
+AccessToken: token xxx
+Authorization: token xxx
 
 {
     "id": "991",
