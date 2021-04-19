@@ -48,6 +48,9 @@ https://github.com/Redocly/redoc
 npm install -g redoc-cli
 
 redoc-cli bundle [Swaggerファイル]
+redoc-cli bundle [Swaggerファイル] -o [出力ファイル名]
+
 redoc-cli bundle swagger_sample01.yml
+redoc-cli bundle swagger_sample01.yml -o redoc-cli_sample/index.html
 ```
 
