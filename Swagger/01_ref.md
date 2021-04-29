@@ -1,99 +1,54 @@
-# Swagger
+----------------  
+API Blueprint  
+----------------  
 
-## Swagger Editor
-https://editor.swagger.io/
-
-
-## Swagger API sample
-https://app.swaggerhub.com/apis/kakisoft/CreateNewAPI01/1.0.0
+## SwaggerHub tutorial
+https://app.swaggerhub.com/help/tutorials/getting-started
 
 
-## OpenAPI について
+## OpenAPI-Specification
+https://github.com/OAI/OpenAPI-Specification
+
+_________________________________________________________________
+## Swagger Hub
+各種ツール群をまとめたサービス？  
+
+3ユーザ　$90/month と、結構な高額。  
+
+
+## 本当に使ってよかったOpenAPI (Swagger) ツール
 https://future-architect.github.io/articles/20191008/
 
-________________________________________________________________________________________
-# 関連ツール
-
-https://swagger.io/tools/open-source/open-source-integrations/
-
-________________________________________________________________________________________
-# ジェネレータ
-
-## bootprint-openapi
-https://github.com/bootprint/bootprint-openapi
-
-#### 使い方
-```
-npm install -g bootprint
-npm install -g bootprint-openapi
-
-bootprint openapi <出力したYAMLかJSONファイル> <出力先ディレクトリ>
-
-bootprint openapi swagger_sample01.yml bootprint_sample
-```
-
-## redoc
-https://github.com/Redocly/redoc
-
-#### 公式デモ
-http://redocly.github.io/redoc/
-
-#### 備考
-静的ページをジェネレートするわけではなく、Webサーバで動かす事を前提としているみたい
+|  Name             |  Description                   |
+|:------------------|:-------------------------------|
+|  Swagger Editor   |  OASに則ったAPI仕様を書くためのエディタ        |
+|  Swagger UI       |  OASに則ったAPI仕様からドキュメントを生成するツール  |
+|  Swagger Codegen  |  OASに則ったAPI仕様からコードを生成するツール     |
 
 
-## redoc-cli
-https://github.com/Redocly/redoc
+## Swaggerの概要をまとめてみた。
+Swaggerのツール群  
+https://qiita.com/gcyata/items/342073fa7607fd4082bd
 
-#### 使い方
-```
-npm install -g redoc-cli
-
-redoc-cli bundle <Swaggerファイル>
-redoc-cli bundle <Swaggerファイル> -o <出力ファイル名>
-
-redoc-cli bundle swagger_sample01.yml
-redoc-cli bundle swagger_sample01.yml -o swagger_sample01_redoc-cli/index.html
-
-```
-
-#### 備考
-マニュアルの説明が簡略化され過ぎて、何書いてるのかよくわかんない  
+|  ツール              |  説明                                              |
+|:------------------|:-------------------------------------------------|
+|  Swagger Spec     |  REST APIに対して Swagger の仕様に準じたドキュメント              |
+|  Swagger Editer   |  Swagger Spec の設計書を記載するためのエディタ                   |
+|  Swagger UI       |  Swagger Spec で記載された設計からドキュメントをHTML形式で自動生成するツール  |
+|  Swagger Codegen  |  Swagger Spec で記載された設計からAPIのスタブを自動生成             |
 
 
-## Swagger UI
+## Swaggerとは
+https://news.mynavi.jp/itsearch/article/devsoft/2395
 
-#### 公式デモ
-https://petstore.swagger.io/
-
-#### 備考
-静的ページをジェネレートするわけではなく、Webサーバで動かす事を前提としているみたい
-
-
-## spectacle
-
-#### 公式デモ
-http://cheesestore.github.io/
-
-#### 使い方
-```
-npm install -g spectacle-docs
-spectacle -d <your_swagger_api.json>
-```
-使えるのは json のみ？  
-yml にしたいんだけど・・・  
+|  ツール名             |  説明                                   |
+|:------------------|:--------------------------------------|
+|  Swagger Core     |  API実装コードからSwagger Specで記載された設計を自動生成  |
+|  Swagger Editor   |  Swagger Specの設計書を記載するためのエディタ         |
+|  Swagger UI       |  Swagger Specで記載された設計からドキュメントを自動生成    |
+|  Swagger Codegen  |  Swagger Specで記載された設計からAPIのスタブを自動生成   |
 
 
-
-## Swagger2Markup
-
-#### 公式デモ
-http://swagger2markup.github.io/spring-swagger2markup-demo/1.1.0/
-
-
-#### 備考
-お手軽さを全く感じない。  
-yml ファイルからちゃちゃっとページを作る、というレベル感で使う物ではなさそうな気がしてきた。  
-
-
+## Stoplight Studio
+https://stoplight.io/studio/
 
