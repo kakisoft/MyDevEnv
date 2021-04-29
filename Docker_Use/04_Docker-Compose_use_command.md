@@ -11,6 +11,15 @@ Ctrl-C で終了した場合、```tmp/pids/server.pid``` を削除し、再起�
 再起動は、docker-compose up
 
 
+## コンテナに入る
+```
+docker-compose exec app bash
+
+// NG
+docker-compose exec app bash -c "cd my-laravel-app/"  
+```
+
+
 ## 終了時にコンテナを削除
 ```
 docker-compose down --rmi all
