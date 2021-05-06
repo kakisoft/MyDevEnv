@@ -67,6 +67,8 @@ docker-compose restart
 ```
 docker-compose exec app bash
 cd my-laravel-app
+
+composer install
 php artisan migrate
 ```
 

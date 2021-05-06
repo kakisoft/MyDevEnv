@@ -1,3 +1,7 @@
+いまのとこ、  
+04_nginx_php_mysql_laravel  
+を使った方がよさそう。  
+
 ## _
 ```
 mkdir laravel-docker-workspace
