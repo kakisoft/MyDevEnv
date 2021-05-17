@@ -72,10 +72,31 @@ composer install
 php artisan migrate
 ```
 
+## キーを用意
+コピーしない場合は、コマンドで作成。
+```
+php artisan key:generate
+```
+
 
 ## アクセス
 ```
 http://localhost:8000/
+```
+
+_______________________________________________________________________________________________
+_______________________________________________________________________________________________
+_______________________________________________________________________________________________
+# トラブルシュート
+
+## log : Permission denied
+```
+UnexpectedValueException
+The stream or file "/var/www/html/my-laravel-app/storage/logs/laravel.log" could not be opened in append mode: failed to open stream: Permission denied
+```
+権限を変更
+```
+chmod -R 777 storage/
 ```
 
 _______________________________________________________________________________________________
