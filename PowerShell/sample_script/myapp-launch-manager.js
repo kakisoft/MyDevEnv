@@ -6,9 +6,9 @@ node myapp-launch-manager.js down
 */
 
 ///////////////////// SET YOUR ENVIRONMENT ////////////////////////////////////////////////////////
-const HAPI_DOCKER_PATH          = "C:\\kaki\\COMPANY_ROOT\\MY_PROJECT\\DOCKER_CONF_SAVED_DIR\\application\\";
-const DEPENDENCE_CONTAINER_PATH = "C:\\kaki\\COMPANY_ROOT\\MY_PROJECT\\DOCKER_CONF_SAVED_DIR\\application\\container\\";
-const HAPI_DOCKER_MYAPP_PATH    = "C:\\kaki\\COMPANY_ROOT\\MY_PROJECT\\DOCKER_CONF_SAVED_DIR\\application\\myapp\\";
+const APPLICATION1_PATH = "C:\\kaki\\COMPANY_ROOT\\MY_PROJECT\\DOCKER_CONF_SAVED_DIR\\application\\";
+const APPLICATION2_PATH = "C:\\kaki\\COMPANY_ROOT\\MY_PROJECT\\DOCKER_CONF_SAVED_DIR\\application\\container\\";
+const APPLICATION3_PATH = "C:\\kaki\\COMPANY_ROOT\\MY_PROJECT\\DOCKER_CONF_SAVED_DIR\\application\\myapp\\";
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 
 const DOCKER_FILE_NAME = "docker-compose.yml";
@@ -54,9 +54,9 @@ switch (commandCategory) {
 //---------------------------
 function executeUpCommand(){
 
-    let command_01 = "docker-compose -f " + HAPI_DOCKER_PATH          + DOCKER_FILE_NAME + " up -d --build";
-    let command_02 = "docker-compose -f " + DEPENDENCE_CONTAINER_PATH + DOCKER_FILE_NAME + " up -d --build";
-    let command_03 = "docker-compose -f " + HAPI_DOCKER_MYAPP_PATH    + DOCKER_FILE_NAME + " up -d --build";
+    let command_01 = "docker-compose -f " + APPLICATION1_PATH + DOCKER_FILE_NAME + " up -d --build";
+    let command_02 = "docker-compose -f " + APPLICATION2_PATH + DOCKER_FILE_NAME + " up -d --build";
+    let command_03 = "docker-compose -f " + APPLICATION3_PATH + DOCKER_FILE_NAME + " up -d --build";
 
     exec(command_01);
     exec(command_02);
@@ -70,9 +70,9 @@ function executeUpCommand(){
 //    docker-compose down
 //---------------------------
 function executeDownCommand(){
-    exec("cd " + HAPI_DOCKER_PATH          + " && docker-compose down");
-    exec("cd " + DEPENDENCE_CONTAINER_PATH + " && docker-compose down");
-    exec("cd " + HAPI_DOCKER_MYAPP_PATH    + " && docker-compose down");
+    exec("cd " + APPLICATION1_PATH + " && docker-compose down");
+    exec("cd " + APPLICATION2_PATH + " && docker-compose down");
+    exec("cd " + APPLICATION3_PATH + " && docker-compose down");
 
     console.log('"docker-compose down" executed');
 }
