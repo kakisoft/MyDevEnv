@@ -2,6 +2,14 @@ ________________________________________________________________________________
 # Docker 公式ドキュメント
 http://docs.docker.jp/index.html  
 http://docs.docker.jp/engine/reference/builder.html  
+https://docs.docker.jp/engine/reference/builder.html#workdir  
+
+
+# Docker Documentation
+https://docs.docker.com/compose/reference/
+
+# Docker Documentation(docker-compose)
+https://docs.docker.com/engine/reference/commandline/exec/
 
 
 # Dockerfile 記述のベスト・プラクティス
