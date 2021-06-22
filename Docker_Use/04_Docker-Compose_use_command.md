@@ -8,15 +8,24 @@ docker-compose down
 ※バックグラウンドで起動
 ```
 Ctrl-C で終了した場合、```tmp/pids/server.pid``` を削除し、再起動。  
-再起動は、docker-compose up
+
+
+## 再起動
+```
+# フォアグラウンドで起動していた場合
+docker-compose up
+
+# バックグラウンドで起動していた場合
+docker-compose restart
+```
 
 
 ## コンテナに入る
 ```
 docker-compose exec app bash
 
-// NG
-docker-compose exec app bash -c "cd my-laravel-app/"  
+# 移動は Dockerfile の WORKDIR を編集した方がいいけど、このやり方で出来なくもない
+docker-compose exec app bash -c "cd my-laravel-app/"
 ```
 
 
@@ -27,11 +36,6 @@ docker-compose down --rmi all --volumes
 ```
 ※ データベース名（MYSQL_DATABASE）を変更した場合、「--volumes」で丸ごと削除してから、また作り直した方がよさそう。
 
-
-## 再起動
-```
-docker-compose restart
-```
 
 
 ## ビルドして起動
