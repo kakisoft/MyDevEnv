@@ -1,3 +1,14 @@
+## Dockerfile 記述のベスト・プラクティス（公式）
+https://docs.docker.jp/v17.06/engine/userguide/eng-image/dockerfile_best-practices.html
+
+
+## Best practices for writing Dockerfiles(docker docs)
+https://docs.docker.com/develop/develop-images/dockerfile_best-practices/
+
+
+______________________________________________________________________
+______________________________________________________________________
+______________________________________________________________________
 ## FROM : ベースとなるイメージを指定（ 「:」以降は「タグ」と呼ばれる ）
 ```dockerfile
 FROM ubuntu:16.04
