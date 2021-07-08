@@ -1,3 +1,13 @@
+## Compose file
+https://docs.docker.com/compose/compose-file/compose-file-v3/
+
+
+##  Docker-docs-ja : compose
+https://docs.docker.jp/compose/
+
+______________________________________________________________________
+______________________________________________________________________
+______________________________________________________________________
 ## docker-compose depends_onとlinksの違い
 https://qiita.com/sivertigo/items/9baa73d922a68788402b  
 
@@ -27,4 +37,37 @@ services:
     image: redis
   db:
     image: postgres
+```
+
+
+## コンテナ名を指定
+container_name
+```yaml
+  app:
+    build: ./docker/php
+    depends_on:
+    - mysql
+    volumes:
+      - .:/var/www/html
+    container_name: myapp
+    user: www-data
+```
+
+
+## コンテナログイン時のデフォルトユーザを指定
+user
+```yaml
+services:
+
+# 中略
+
+  app:
+    build: ./docker/php
+    depends_on:
+    - mysql
+    volumes:
+      - .:/var/www/html
+    user: www-data
+
+# 以下略
 ```

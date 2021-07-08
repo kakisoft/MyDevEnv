@@ -20,12 +20,23 @@ docker-compose restart
 ```
 
 
+## ビルドして起動
+```
+docker-compose up -d --build
+```
+
+
 ## コンテナに入る
 ```
 docker-compose exec app bash
 
 # 移動は Dockerfile の WORKDIR を編集した方がいいけど、このやり方で出来なくもない
 docker-compose exec app bash -c "cd my-laravel-app/"
+```
+
+## ユーザを指定してコンテナログイン
+```
+docker-compose exec --user root app bash
 ```
 
 
@@ -35,13 +46,6 @@ docker-compose down --rmi all
 docker-compose down --rmi all --volumes
 ```
 ※ データベース名（MYSQL_DATABASE）を変更した場合、「--volumes」で丸ごと削除してから、また作り直した方がよさそう。
-
-
-
-## ビルドして起動
-```
-docker-compose up -d --build
-```
 
 
 
