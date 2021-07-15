@@ -47,6 +47,13 @@ docker-compose down --rmi all --volumes
 ```
 ※ データベース名（MYSQL_DATABASE）を変更した場合、「--volumes」で丸ごと削除してから、また作り直した方がよさそう。
 
+##### docker-compose down : Options
+https://docs.docker.com/compose/reference/down/
+```
+--rmi type  Remove images. Type must be one of:
+            'all': Remove all images used by any service.
+            'local': Remove only images that don't have a
+```
 
 
 ## コンテナログイン
@@ -71,6 +78,18 @@ docker-compose build --no-cache
 ```
 docker system df
 ```
+
+_____________________________________________________________________________________
+_____________________________________________________________________________________
+_____________________________________________________________________________________
+## コンテナの外から composer install
+```
+docker-compose run --rm app composer install --ignore-platform-reqs
+```
+https://docs.docker.com/compose/reference/run/  
+
+--rm : Remove container after run. Ignored in detached mode.  
+
 
 _____________________________________________________________________________________
 _____________________________________________________________________________________
