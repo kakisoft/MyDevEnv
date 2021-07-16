@@ -17,6 +17,7 @@ docker-compose down
 ※Ubuntu だと composer が not found だった。
 ``
 docker-compose exec app bash
+docker-compose exec --user root app bash
 
 
 バージョンを指定しない場合（最新版がインストールされる）

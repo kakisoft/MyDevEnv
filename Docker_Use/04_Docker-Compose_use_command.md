@@ -30,6 +30,7 @@ docker-compose up -d --build
 ```
 docker-compose exec app bash
 
+
 # 移動は Dockerfile の WORKDIR を編集した方がいいけど、このやり方で出来なくもない
 docker-compose exec app bash -c "cd my-laravel-app/"
 ```
