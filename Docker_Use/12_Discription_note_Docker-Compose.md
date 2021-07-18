@@ -71,3 +71,30 @@ services:
 
 # 以下略
 ```
+
+## 環境変数
+environment
+```yaml
+  app:
+    build: ./docker/php
+    depends_on:
+    - mysql
+    volumes:
+      - .:/var/www/html
+    container_name: myapp
+    user: www-data
+    environment:
+      - APP_ENV=local
+  mysql:
+    image: mysql:5.7
+    environment:
+      MYSQL_DATABASE: myapp01
+      MYSQL_USER: user
+      MYSQL_PASSWORD: password
+      MYSQL_ROOT_PASSWORD: password
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql-data:/var/lib/mysql
+```
+
